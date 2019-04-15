@@ -13,7 +13,7 @@ Widget::Widget(QWidget *parent) :
 {
     ui->setupUi(this);
     //去掉系统边框
-    this->setWindowFlags(Qt::FramelessWindowHint);
+    //this->setWindowFlags(Qt::FramelessWindowHint);
     //阴影边框效果类
     QGraphicsDropShadowEffect *shadow = new QGraphicsDropShadowEffect();
     shadow->setBlurRadius(0);
