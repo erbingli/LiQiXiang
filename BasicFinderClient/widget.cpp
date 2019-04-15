@@ -16,6 +16,7 @@ Widget::Widget(QWidget *parent) :
     this->setWindowFlags(Qt::FramelessWindowHint);
     //阴影边框效果类
     QGraphicsDropShadowEffect *shadow = new QGraphicsDropShadowEffect();
+    //1111111111111
     shadow->setBlurRadius(0);
     shadow->setColor(Qt::black);
     shadow->setOffset(0);
