@@ -69,7 +69,7 @@ border-radius: 6px;
          <widget class="QWidget" name="LeftWidget" native="true">
           <property name="styleSheet">
            <string notr="true">QWidget#LeftWidget{
-	image: url(:/Images/Images/login_leftText.png);
+	
 	background-image: url(:/Images/Images/login_leftBk.png);
     border-top-left-radius:6px;
     border-bottom-left-radius:6px;
@@ -78,6 +78,22 @@ border-radius: 6px;
     
 </string>
           </property>
+          <widget class="QWidget" name="widget" native="true">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>240</y>
+             <width>211</width>
+             <height>151</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QWidget#widget{
+	image: url(:/Images/Images/login_leftText.png);
+}
+</string>
+           </property>
+          </widget>
          </widget>
         </item>
         <item>
