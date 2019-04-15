@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#Widget{
+
+border-radius: 6px;
+}
+</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="shadowWidget" native="true">
+     <property name="styleSheet">
+      <string notr="true">QWidget#shadowWidget{
+
+border-radius: 6px;
+}</string>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="1,2">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QWidget" name="LeftWidget" native="true">
+          <property name="styleSheet">
+           <string notr="true">QWidget#LeftWidget{
+	image: url(:/Images/Images/login_leftText.png);
+	background-image: url(:/Images/Images/login_leftBk.png);
+    border-top-left-radius:6px;
+    border-bottom-left-radius:6px;
+}
+
+    
+</string>
+          </property>
+          <widget class="QLabel" name="label">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>80</y>
+             <width>51</width>
+             <height>61</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::AutoText</enum>
+           </property>
+           <property name="pixmap">
+            <pixmap resource="Resource/resource.qrc">:/White/error</pixmap>
+           </property>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="RightWidget" native="true">
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QWidget #RightWidget
+{
+	background-image: url(:/Images/Images/login_rightBk.png);
+    border-top-right-radius:6px;
+    border-bottom-right-radius:6px;
+    
+    
+}
+</string>
+          </property>
+          <widget class="QPushButton" name="LoginBtn">
+           <property name="geometry">
+            <rect>
+             <x>80</x>
+             <y>300</y>
+             <width>250</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="palette">
+            <palette>
+             <active>
+              <colorrole role="WindowText">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>255</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Button">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>0</red>
+                 <green>141</green>
+                 <blue>211</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Text">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>255</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="ButtonText">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>255</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>0</red>
+                 <green>141</green>
+                 <blue>211</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Window">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>0</red>
+                 <green>141</green>
+                 <blue>211</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </active>
+             <inactive>
+              <colorrole role="WindowText">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>255</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Button">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>0</red>
+                 <green>141</green>
+                 <blue>211</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Text">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>255</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="ButtonText">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>255</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>0</red>
+                 <green>141</green>
+                 <blue>211</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Window">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>0</red>
+                 <green>141</green>
+                 <blue>211</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </inactive>
+             <disabled>
+              <colorrole role="WindowText">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>255</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Button">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>0</red>
+                 <green>141</green>
+                 <blue>211</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Text">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>255</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="ButtonText">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>255</red>
+                 <green>255</green>
+                 <blue>255</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>0</red>
+                 <green>141</green>
+                 <blue>211</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Window">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>0</red>
+                 <green>141</green>
+                 <blue>211</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </disabled>
+            </palette>
+           </property>
+           <property name="font">
+            <font>
+             <family>新宋体</family>
+             <pointsize>12</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::TabFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#LoginBtn 
+{
+	
+	color: rgb(255, 255, 255);
+    font: 12pt &quot;新宋体&quot;;
+    border-width:5px; 
+	
+	
+	background-color: rgb(0, 141, 211);
+	border-radius: 4px;
+	
+}
+
+QPushButton#LoginBtn:hover
+{ 
+	
+	background-color: rgb(0, 170, 255);
+}
+
+QPushButton#LoginBtn:pressed
+{
+background-color: rgb(0, 141, 211);
+}
+QPushButton#LoginBtn:focus{      
+
+    border:1px solid blue; 
+}</string>
+           </property>
+           <property name="text">
+            <string>登  录</string>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>19</width>
+             <height>19</height>
+            </size>
+           </property>
+          </widget>
+          <widget class="QLabel" name="login_logo_label">
+           <property name="geometry">
+            <rect>
+             <x>170</x>
+             <y>40</y>
+             <width>81</width>
+             <height>61</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+	
+	border-image: url(:/Black/Images/login_logo.png);
+}
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btnClose">
+           <property name="geometry">
+            <rect>
+             <x>370</x>
+             <y>10</y>
+             <width>20</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#btnClose{
+image: url(:/White/closePressed);
+}
+
+QPushButton#btnClose
+{
+    border:none;
+    
+
+   border-top-right-radius:5px;
+    
+}
+
+QPushButton#btnClose:hover
+{
+   
+	background-color: rgb(255, 91, 41);
+}
+
+QPushButton#btnClose:pressed
+{
+   
+	background-color: rgb(255, 16, 16);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="btnMin">
+           <property name="geometry">
+            <rect>
+             <x>340</x>
+             <y>10</y>
+             <width>20</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton#btnMin
+{
+image: url(:/White/minimizePressed);
+}
+
+QPushButton
+{
+    border:none;   
+}
+
+QPushButton:hover
+{
+	background-color: rgb(88, 197, 255);
+}
+
+QPushButton:pressed
+{
+background-color: rgb(78, 177, 226);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="autoRepeatDelay">
+            <number>294</number>
+           </property>
+           <property name="autoDefault">
+            <bool>true</bool>
+           </property>
+           <property name="default">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="LogincomboBox">
+           <property name="geometry">
+            <rect>
+             <x>80</x>
+             <y>150</y>
+             <width>250</width>
+             <height>40</height>
+            </rect>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::StrongFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QComboBox#LogincomboBox{
+	
+	
+	background-color: rgb(0, 0, 0);
+	color: rgb(131, 131, 131);
+	
+	border-width:1px ; 
+    border-radius: 3px;
+    padding: 1px 2px 1px 2px; 
+    min-width: 9em;  
+}
+
+QComboBox#LogincomboBox:enabled:hover, QComboBox#LogincomboBox:enabled:focus{      
+
+    border:1px solid blue; 
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+ 
+    border-left-width: 0px;
+    border-left-color: darkgray;
+    border-left-style: solid; 
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+QComboBox::down-arrow {
+   
+	image: url(:/Images/Images/comboxdrop.png);
+}
+QComboBox QAbstractItemView::item {
+	selection-color: rgb(255, 255, 255);
+    height: 35px;
+
+}
+ 
+QListView {			
+	background-color: rgb(0, 0, 0);
+	border:1px;
+}
+QLabel
+{
+color: rgb(131, 131, 131);
+}
+QListView::item:hover {
+    
+	background-color: rgb(190, 190, 190);
+}
+ QListView:focus{      
+
+    border:1px solid blue; 			
+}
+QComboBox QAbstractItemView::item:focus {
+	border:none; 	
+	background-color: rgb(0, 0, 0);
+    height: 35px;    
+}
+QComboBox QAbstractItemView
+{
+	 border: 1px solid darkgray;
+     border-radius:2px;
+     selection-background-color:blue ;
+     outline:0px;	
+}
+</string>
+           </property>
+           <property name="editable">
+            <bool>false</bool>
+           </property>
+           <property name="maxCount">
+            <number>20</number>
+           </property>
+           <item>
+            <property name="text">
+             <string>新建项目</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QLineEdit" name="LoginlineEdit">
+           <property name="geometry">
+            <rect>
+             <x>80</x>
+             <y>200</y>
+             <width>250</width>
+             <height>40</height>
+            </rect>
+           </property>
+           <property name="mouseTracking">
+            <bool>true</bool>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::StrongFocus</enum>
+           </property>
+           <property name="acceptDrops">
+            <bool>true</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit#LoginlineEdit{
+	
+	background-color: rgb(0, 0, 0);
+	
+	border:1px ; 
+	color: rgb(131, 131, 131);
+}
+
+
+QLineEdit#LoginlineEdit:enabled:hover,QLineEdit#LoginlineEdit:enabled:focus{      
+
+    
+border:1px solid blue;
+}
+</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="Resource/resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
