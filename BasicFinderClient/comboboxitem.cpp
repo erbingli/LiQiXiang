@@ -9,9 +9,7 @@ ComboboxItem::ComboboxItem(QWidget *parent) : QWidget(parent)
         button=new QPushButton(this);
         button->setToolTip("删除账号信息");
         button->setStyleSheet("background:transparent;");
-        //button->setAttribute(Qt::WA_OpaquePaintEvent);
 
-        //m_img->setFixedSize(pic.size());
         m_label = new QLabel(this);
 
         m_layout = new QHBoxLayout(this);
