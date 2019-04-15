@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>600</width>
-    <height>400</height>
+    <width>680</width>
+    <height>450</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -78,25 +78,6 @@ border-radius: 6px;
     
 </string>
           </property>
-          <widget class="QLabel" name="label">
-           <property name="geometry">
-            <rect>
-             <x>50</x>
-             <y>80</y>
-             <width>51</width>
-             <height>61</height>
-            </rect>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="textFormat">
-            <enum>Qt::AutoText</enum>
-           </property>
-           <property name="pixmap">
-            <pixmap resource="Resource/resource.qrc">:/White/error</pixmap>
-           </property>
-          </widget>
          </widget>
         </item>
         <item>
@@ -118,10 +99,10 @@ border-radius: 6px;
           <widget class="QPushButton" name="LoginBtn">
            <property name="geometry">
             <rect>
-             <x>80</x>
+             <x>60</x>
              <y>300</y>
-             <width>250</width>
-             <height>41</height>
+             <width>353</width>
+             <height>47</height>
             </rect>
            </property>
            <property name="palette">
@@ -373,104 +354,13 @@ QPushButton#LoginBtn:focus{
             <string/>
            </property>
           </widget>
-          <widget class="QPushButton" name="btnClose">
-           <property name="geometry">
-            <rect>
-             <x>370</x>
-             <y>10</y>
-             <width>20</width>
-             <height>16</height>
-            </rect>
-           </property>
-           <property name="autoFillBackground">
-            <bool>false</bool>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton#btnClose{
-image: url(:/White/closePressed);
-}
-
-QPushButton#btnClose
-{
-    border:none;
-    
-
-   border-top-right-radius:5px;
-    
-}
-
-QPushButton#btnClose:hover
-{
-   
-	background-color: rgb(255, 91, 41);
-}
-
-QPushButton#btnClose:pressed
-{
-   
-	background-color: rgb(255, 16, 16);
-}</string>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-          </widget>
-          <widget class="QPushButton" name="btnMin">
-           <property name="geometry">
-            <rect>
-             <x>340</x>
-             <y>10</y>
-             <width>20</width>
-             <height>16</height>
-            </rect>
-           </property>
-           <property name="layoutDirection">
-            <enum>Qt::LeftToRight</enum>
-           </property>
-           <property name="autoFillBackground">
-            <bool>false</bool>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">QPushButton#btnMin
-{
-image: url(:/White/minimizePressed);
-}
-
-QPushButton
-{
-    border:none;   
-}
-
-QPushButton:hover
-{
-	background-color: rgb(88, 197, 255);
-}
-
-QPushButton:pressed
-{
-background-color: rgb(78, 177, 226);
-}</string>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="autoRepeatDelay">
-            <number>294</number>
-           </property>
-           <property name="autoDefault">
-            <bool>true</bool>
-           </property>
-           <property name="default">
-            <bool>true</bool>
-           </property>
-          </widget>
           <widget class="QComboBox" name="LogincomboBox">
            <property name="geometry">
             <rect>
-             <x>80</x>
+             <x>60</x>
              <y>150</y>
-             <width>250</width>
-             <height>40</height>
+             <width>352</width>
+             <height>43</height>
             </rect>
            </property>
            <property name="focusPolicy">
@@ -491,7 +381,8 @@ background-color: rgb(78, 177, 226);
 
 QComboBox#LogincomboBox:enabled:hover, QComboBox#LogincomboBox:enabled:focus{      
 
-    border:1px solid blue; 
+    border:1px solid rgb(59, 119, 179);
+
 }
 
 QComboBox::drop-down {
@@ -527,9 +418,11 @@ QListView::item:hover {
     
 	background-color: rgb(190, 190, 190);
 }
- QListView:focus{      
+QListView:focus{      
 
-    border:1px solid blue; 			
+    border:1px solid rgb(59, 119, 179);
+	
+		
 }
 QComboBox QAbstractItemView::item:focus {
 	border:none; 	
@@ -560,10 +453,10 @@ QComboBox QAbstractItemView
           <widget class="QLineEdit" name="LoginlineEdit">
            <property name="geometry">
             <rect>
-             <x>80</x>
+             <x>60</x>
              <y>200</y>
-             <width>250</width>
-             <height>40</height>
+             <width>352</width>
+             <height>43</height>
             </rect>
            </property>
            <property name="mouseTracking">
@@ -580,7 +473,7 @@ QComboBox QAbstractItemView
 	
 	background-color: rgb(0, 0, 0);
 	
-	border:1px ; 
+	border:0.5px ; 
 	color: rgb(131, 131, 131);
 }
 
@@ -588,13 +481,121 @@ QComboBox QAbstractItemView
 QLineEdit#LoginlineEdit:enabled:hover,QLineEdit#LoginlineEdit:enabled:focus{      
 
     
-border:1px solid blue;
+border:0.5px solid rgb(72, 144, 216);
+		
+	border-color: rgb(59, 119, 179);
+	
 }
 </string>
            </property>
            <property name="text">
             <string/>
            </property>
+          </widget>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>370</x>
+             <y>0</y>
+             <width>71</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QPushButton" name="btnMin">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::LeftToRight</enum>
+              </property>
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton#btnMin
+{
+image: url(:/White/minimizePressed);
+}
+
+QPushButton
+{
+    border:none;   
+}
+
+QPushButton:hover
+{
+	background-color: rgb(209, 69, 0);
+}
+
+QPushButton:pressed
+{
+background-color: rgb(78, 177, 226);
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="autoRepeatDelay">
+               <number>294</number>
+              </property>
+              <property name="autoDefault">
+               <bool>true</bool>
+              </property>
+              <property name="default">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnClose">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton#btnClose{
+image: url(:/White/closePressed);
+}
+
+QPushButton#btnClose
+{
+    border:none;
+    
+
+   border-top-right-radius:5px;
+    
+}
+
+QPushButton#btnClose:hover
+{
+background-color: rgb(209, 69, 0);
+}
+
+QPushButton#btnClose:pressed
+{
+ 
+	background-color: rgb(209, 69, 0);
+}</string>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
           </widget>
          </widget>
         </item>
@@ -606,8 +607,6 @@ border:1px solid blue;
   </layout>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources>
-  <include location="Resource/resource.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>
